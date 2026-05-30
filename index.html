@@ -289,7 +289,7 @@
         <li>Google Maps embed</li>
         <li>1-week delivery</li>
       </ul>
-      <a href="mailto:talhtahirlhr10@gmail.com?subject=Starter Plan" class="plan-btn">Get Started</a>
+      <a href="mailto:query.talha@gmail.com?subject=Starter Plan" class="plan-btn" id="starter-btn">Get Started</a>
     </div>
 
     <div class="pricing-card featured reveal reveal-delay-1">
@@ -304,7 +304,7 @@
         <li>Speed optimized</li>
         <li>2-week delivery</li>
       </ul>
-      <a href="mailto:talhtahirlhr10@gmail.com?subject=Standard Plan" class="plan-btn">Get Started</a>
+      <a onclick="window.location.href='mailto:query.talha@gmail.com?subject=Standard Plan'" type="button" class="plan-btn">Get Started</a>
     </div>
 
     <div class="pricing-card reveal reveal-delay-2">
@@ -319,7 +319,7 @@
         <li>30 days post-launch support</li>
         <li>Monthly retainer option</li>
       </ul>
-      <a href="mailto:talhtahirlhr10@gmail.com?subject=Premium Plan" class="plan-btn">Get Started</a>
+      <a href="mailto:query.talha@gmail.com?subject=Premium Plan" class="plan-btn">Get Started</a>
     </div>
   </div>
 </section>
@@ -337,11 +337,11 @@
         I reply within a few hours. Tell me about your business and I'll send you a free mockup — no commitment needed.
       </p>
       <div class="contact-info-list">
-        <a href="mailto:talhtahirlhr10@gmail.com" class="contact-info-item">
+        <a href="mailto:query.talha@gmail.com" class="contact-info-item">
           <div class="contact-info-icon">✉</div>
           <div>
             <div class="contact-info-label">Email</div>
-            <div class="contact-info-value">talhtahirlhr10@gmail.com</div>
+            <div class="contact-info-value">query.talha@gmail.com</div>
           </div>
         </a>
         <a href="tel:+923278602003" class="contact-info-item">
@@ -370,7 +370,7 @@
 
     <!-- Right: Form -->
     <div class="contact-form-wrap reveal reveal-delay-2">
-      <form class="contact-form" id="contactForm" action="https://formsubmit.co/talhtahirlhr10@gmail.com" method="POST">
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/query.talha@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New message from your portfolio site">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
@@ -430,7 +430,7 @@
   <div class="footer-copy">© 2026 M. Talha Tahir. All rights reserved.</div>
   <ul class="footer-links">
     <li><a href="https://github.com/TalhaTahir-09" target="_blank">GitHub</a></li>
-    <li><a href="mailto:talhtahirlhr10@gmail.com">Email</a></li>
+    <li><a href="mailto:query.talha@gmail.com">Email</a></li>
   </ul>
 </footer>
 
@@ -450,6 +450,7 @@
     requestAnimationFrame(animateCursor);
   }
   animateCursor();
+
 
   // Loader counter
   const loaderCount = document.getElementById('loader-count');
@@ -481,6 +482,14 @@
     });
   }, { threshold: 0.12 });
   reveals.forEach(el => observer.observe(el));
+//  Pricing plan
+  const starterBtn = document.getElementById('starter-btn');
+  starterBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("Hello");
+  window.location.href = "mailto:query.talha@gmail.com?subject=Starter Plan";
+});
+
 </script>
 </body>
 </html>

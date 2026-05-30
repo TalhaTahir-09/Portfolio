@@ -1054,10 +1054,13 @@
     transition: background 0.2s, transform 0.2s;
     width: 100%;
   }
-  .form-submit:hover { background: var(--accent2); transform: scale(1.01); }
+  .form-submit:hover { background: var(--accent2); transform: scale(1.01); cursor: none; }
 
   @media (max-width: 900px) {
     .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
     .form-row { grid-template-columns: 1fr; }
     .budget-options { flex-wrap: wrap; }
   }
+*:hover{
+    cursor: none;
+}
